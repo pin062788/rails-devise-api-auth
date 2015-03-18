@@ -1,0 +1,12 @@
+
+http://www.flincllck.com/use-json-authentication-api-on-rails4/
+
+1)#注册
+curl -X POST -H 'Content-Type: application/json' -d '{"user":{"password":"12345678","password_confirmation":"12345678","email": "12345678@x.com"}}' http://localhost:3000/users.json
+
+2)#登录
+curl -X POST -H 'Content-Type: application/json' -d '{"user":{"email": "12345678@x.com","password": "12345678"}}' http://localhost:3000/users/sign_in
+ 
+
+3) create a book
+	curl -X POST -H "Content-Type: application/json" -d '{"book":{"name":"test"}}' localhost:3000/books\.json\?token=5cN1wmxPAxUd-5ygACEw
